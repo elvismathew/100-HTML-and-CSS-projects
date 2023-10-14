@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 1.5rem;
+    overflow:hidden;
+}
+
+
+
+header{
+    margin:0px;
+}
+
+ul{
+    list-style: none;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#666;
+    display: inline-block;
+}
+.word{
+    color:purple;
+}
+
+.logo i{
+    color:purple;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    height: 70px;
+    padding: 2em;
+    font-size: 25px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.menu > li{
+    margin: 0 1rem;
+    overflow: hidden;
+    
+}
+
+.menu li a{
+    color: purple;
+}
+.menu{
+    display: flex;
+    flex-direction:row;
+    list-style-type:none;
+    margin:0;
+}
