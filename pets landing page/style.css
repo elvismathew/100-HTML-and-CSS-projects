@@ -41,35 +41,144 @@ ul{
     color:purple;
 }
 
-.nav{
+.navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background: white;
-    color: black;
+    color: purple;
     height: 70px;
     padding: 2em;
     font-size: 25px;
 }
 
-.menu li:hover{
+.menu ul li:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
 
-.menu > li{
+.menu ul > li{
     margin: 0 1rem;
     overflow: hidden;
     
 }
 
-.menu li a{
+.menu ul li a{
     color: purple;
 }
-.menu{
+.menu ul{
     display: flex;
     flex-direction:row;
     list-style-type:none;
     margin:0;
+    
 }
+
+.menu .fa{
+    margin-right: 8px;
+}
+
+.sub_menu1{
+ display: none;
+}
+
+.menu ul li:hover .sub_menu1{
+    display: block;
+    position: absolute;
+    background-color: purple;
+    margin-top:15px;
+    margin-left: 15px;
+}
+
+.menu ul li:hover .sub_menu1 ul{
+    display:block;
+    margin: 10px;
+}
+
+.menu ul li:hover .sub_menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub_menu2{
+    display:none;
+}
+
+.sub_menu3{
+    display: none;
+}
+
+/* Styling the content */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+  
+}
+.mainfont{
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: medium 500;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+    font-size: 0.5rem;
+    padding-left: 5rem;
+    
+}
+
+.home .content h3{
+    font-size: 1.2rem;
+    color:purple;
+}
+
+.home .content p{
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    color: purple;
+}
+
+/*Styling the button */
+.button{
+
+    display:inline-block;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    padding:0,8rem 3rem;
+    border: 0.1rem solid black;
+    
+    
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 1rem 1rem 0 0;
+
+    
+}
+
+/*styling the main image */
+
+.home .image{
+    float: right;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-right: 5px;
+    width: 150px;
+    height:150px;
+
+}
+
+
+
